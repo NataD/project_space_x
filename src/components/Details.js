@@ -8,12 +8,6 @@ import Counter from './Counter.js';
 
 class Details extends React.Component{
 
-
-
-
-
-
-
   render(){
     let d = new Date(launch.launch_date_utc);
     let month = new Array();
@@ -64,11 +58,9 @@ class Details extends React.Component{
             <h2 className="launch__details__title">Launch Pad</h2>
             <div className="launch__details__pad">
               <p className="launch__details__tag">Name: <span className="launch__details__data">{launchSite.location.name}</span></p>
-
             </div>
             <div className="launch__details__pad">
               <p className="launch__details__tag">Location: <span className="launch__details__data">{launchSite.location.region}</span></p>
-
             </div>
             <p className="launch__details__text">{launchSite.details}</p>
           </div>

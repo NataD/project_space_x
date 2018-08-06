@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-
 import './LaunchListFilter.sass';
 
 class LaunchFilter extends React.Component {
@@ -20,12 +19,11 @@ class LaunchFilter extends React.Component {
         <div className="mission-links__btns">
           <button  onClick={this.transfer} className="launch-list-button" >All rockets</button>
           {
-            this.props.options.map((element, index) =>{
+            this.props.options.map((element, index) => {
               return <button data-name = {element} key={index} onClick={this.transfer} className="launch-list-button" >{element}</button>
             })
           }
         </div>
-
       </div>
     );
   }

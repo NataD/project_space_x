@@ -21,7 +21,6 @@ class LaunchListParts extends React.Component {
     if (launches.length > 0) {
       let launchesLeft =[];
       let launchesRight =[];
-
       let k =0;
       while(k<launches.length){
         launchesLeft.push(launches[k]);
@@ -34,20 +33,17 @@ class LaunchListParts extends React.Component {
           <span className="launches-section__item-date">{ `${this.getDate(item.launch_date_local)}` }</span>
           <span className="launches-section__item-arrow arrow-icon">
             <span className="arrow-icon arrow-icon-left">
-    <img
-      src={arrowPointer}
-      alt=""
-    />
+              <img src={arrowPointer} alt="" />
               <div className="round"></div>
+            </span>
           </span>
-    </span>
           <span className="launches-section__item-details item-details-left">
-    <span className="launches-section__item-label">{ `rocket:` }</span>
-    <span className="launches-section__item-value">{ `${item.rocket.rocket_id}` }</span>
-    <span className="launches-section__item-line">{`|`}</span>
-    <span className="launches-section__item-label">{ `launch site:` }</span>
-    <span className="launches-section__item-value">{ `${item.launch_site.site_name_long}` }</span>
-    </span>
+            <span className="launches-section__item-label">{ `rocket:` }</span>
+            <span className="launches-section__item-value">{ `${item.rocket.rocket_id}` }</span>
+            <span className="launches-section__item-line">{`|`}</span>
+            <span className="launches-section__item-label">{ `launch site:` }</span>
+            <span className="launches-section__item-value">{ `${item.launch_site.site_name_long}` }</span>
+          </span>
         </div>
       ));
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import LaunchListFilter from '../components/LaunchListFilter.js';
 import LaunchListParts from '../components/LaunchListParts.js';
 import LaunchListHeader from '../components/LaunchListHeader.js';

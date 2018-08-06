@@ -1,15 +1,12 @@
 import { hot } from 'react-hot-loader';
 import * as React from 'react';
-
 import launch from './assets/sample_json_data/launch.json';
 import launchSite from './assets/sample_json_data/launch_site.json';
 import rocket from './assets/sample_json_data/rocket.json';
 import launches from './assets/sample_json_data/launches.json';
-
 import LaunchDetails from './view/LaunchDetails';
 import LaunchList from './view/LaunchList';
 import Footer from './components/Footer';
-
 import './styles/theme.sass';
 
 class App extends React.Component { // eslint-disable-line react/prefer-stateless-function
@@ -22,8 +19,6 @@ class App extends React.Component { // eslint-disable-line react/prefer-stateles
     this.handleLaunchClick = this.handleLaunchClick.bind(this);
     this.handleBackClick = this.handleBackClick.bind(this);
   }
-
-
 
   get activeViewComponent() {
     const { viewName } = this.state;
@@ -61,7 +56,7 @@ class App extends React.Component { // eslint-disable-line react/prefer-stateles
     this.setState({ viewName: 'list' });
   }
 
-    render() {
+  render() {
     return (
       <main className="page-container">
         <div className="page-content">

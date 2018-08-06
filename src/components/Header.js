@@ -18,7 +18,7 @@ class Header extends React.Component {
         <div className="navigation__right">
           <img src={logo} alt="logo" className="navigation__logo"/>
         </div>
-        </div>
+      </div>
     </header>
     );
   }

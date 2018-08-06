@@ -22,18 +22,17 @@ class LaunchRight extends React.Component {
     document.body.scrollTop = 0; //scroll to the top on the page with details
     document.documentElement.scrollTop = 0;
   }
-  render() {
 
+  render() {
     return (
       <div className="launches-section__item">
         <a onClick = {this.handleClick} className="launches-section-header">
           <span className="launches-section__item-date">{ `${this.getDate(this.props.data.launch_date_local)}` }</span>
-
         </a>
         <span className="launches-section__item-arrow arrow-icon">
-            <span className="arrow-icon arrow-icon-right">
+          <span className="arrow-icon arrow-icon-right">
             <img src={arrowPointer} alt="arrow" />
-              <div className="round"></div>
+            <div className="round"></div>
           </span>
         </span>
         <span className="launches-section__item-details item-details-right">
@@ -43,10 +42,8 @@ class LaunchRight extends React.Component {
           <span className="launches-section__item-label">{ `launch site:` }</span>
           <span className="launches-section__item-value">{ `${this.props.data.launch_site.site_name_long}` }</span>
         </span>
-
       </div>
-    )}
+  )}
 }
-
 
 export default LaunchRight;
