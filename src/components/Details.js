@@ -1,9 +1,9 @@
 import React from 'react';
-
 import './Details.sass';
 import launch from '../assets/sample_json_data/launch.json';
 import launchSite from '../assets/sample_json_data/launch_site.json';
 import rocket from '../assets/sample_json_data/rocket.json';
+import rocketImg from '../assets/img/rocket-rocket-launch.jpg';
 import Counter from './Counter.js';
 
 class Details extends React.Component{
@@ -30,7 +30,7 @@ class Details extends React.Component{
           <h2 className="launch__info__date">{(new Date(launch.launch_date_utc).getDate())} {launchDate} {(new Date(launch.launch_date_utc).getFullYear())}</h2>
           <h1 className="launch__info__name">{launch.rocket.rocket_name} Next Launch</h1>
           <h2 className="launch__info__counter"> <Counter /> </h2>
-          <img src={launch.links.mission_patch_small} alt="launch-logo" className="launch__logo"></img>
+          <img src={rocketImg} alt="launch-logo" className="launch__logo"></img>
         </div>
         <div className="launch__details">
           <div className="launch__details__description">
