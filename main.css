@@ -78,6 +78,11 @@
   margin-bottom: 0;
   color: #0f1112; }
 
+.launch__logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; }
+
 .launch__details {
   width: 50%; }
 
